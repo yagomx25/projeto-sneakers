@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerX - A sua loja de Tênis Exclusivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <!-- Logótipo principal da loja -->
+            <a href="index.html"><img src="SneakersX.jpg" alt="Logotipo SneakerX com um tênis em chamas" width="80" height="80"></a>
+        </div>
+        <nav class="menu">
+            <a href="#">Lançamentos</a>
+            <a href="#">Marcas</a>
+        </nav>
+        <div class="acoes">
+            <input type="text" placeholder="Buscar tênis...">
+            <!-- ALTERAÇÃO: Redireciona para a página do carrinho -->
+            <button onclick="window.location.href='carrinho.html'">🛒 Carrinho</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- CARROSSEL DE BANNERS -->
+        <section class="carrossel-promocoes" aria-label="Banners Promocionais">
+            <div class="banner">
+                <img src="https://via.placeholder.com/1200x400/ff7f50/ffffff?text=Colecao+Streetwear" alt="Nova Coleção Streetwear" width="1200" height="400">
+            </div>
+            <div class="banner">
+                <img src="https://via.placeholder.com/1200x400/6495ed/ffffff?text=Nike+Air+Max" alt="Lançamento Nike Air Max" width="1200" height="400">
+            </div>
+            <div class="banner">
+                <img src="https://via.placeholder.com/1200x400/3cb371/ffffff?text=Off+White+Exclusivos" alt="Tênis Off-White Exclusivos" width="1200" height="400">
+            </div>
+        </section>
+
+        <!-- CATEGORIAS (Imagens Circulares) -->
+        <section class="categorias">
+            <div class="item-categoria">
+                <img src="Logo nike.png" alt="Categoria Nike" width="200" height="200">
+                <p>Nike</p>
+            </div>
+            <div class="item-categoria">
+                <img src="Logo adidas.png" alt="Categoria Adidas" width="200" height="200">
+                <p>Adidas</p>
+            </div>
+            <div class="item-categoria">
+                <img src="logo puma.png" alt="Categoria Puma" width="200" height="200">
+                <p>Puma</p>
+            </div>
+            <div class="item-categoria">
+                <img src="Acessorios.jpg" alt="Categoria Acessórios" width="200" height="200">
+                <p>Acessórios</p>
+            </div>
+        </section>
+
+        <!-- VITRINE DE PRODUTOS -->
+        <section class="vitrine">
+            <!-- Produto Normal 1 -->
+            <article class="cartao-produto">
+                <figure class="imagem-container">
+                    <img src="Air jordan 1 high.webp" alt="Tênis Nike Air Jordan 1 Vermelho e Preto" width="400" height="300" loading="lazy">
+                </figure>
+                <figcaption class="informacao-produto">
+                    <h3>Air Jordan 1 High</h3>
+                    <p class="preco">R$ 1.299,90</p>
+                    <!-- ALTERAÇÃO: Botão modificado para abrir os detalhes do produto -->
+                    <button class="btn-comprar" onclick="window.location.href='produto.html'">Comprar</button>
+                </figcaption>
+            </article>
+
+            <!-- Produto Normal 2 -->
+            <article class="cartao-produto">
+                <figure class="imagem-container">
+                    <img src="Yezzy boost 350.webp" alt="Tênis Adidas Yeezy Boost 350" width="400" height="300" loading="lazy">
+                </figure>
+                <figcaption class="informacao-produto">
+                    <h3>Yeezy Boost 350</h3>
+                    <p class="preco">R$ 1.899,90</p>
+                    <!-- ALTERAÇÃO: Direcionado também para fins de teste à tela de produto -->
+                    <button class="btn-comprar" onclick="window.location.href='produto.html'">Comprar</button>
+                </figcaption>
+            </article>
+
+            <!-- Produto ESGOTADO -->
+            <article class="cartao-produto esgotado">
+                <figure class="imagem-container">
+                    <span class="etiqueta-esgotado">ESGOTADO</span>
+                    <img src="Nike dunk low panda.avif" alt="Tênis Nike Dunk Low Panda Preto e Branco" width="400" height="300" loading="lazy">
+                </figure>
+                <figcaption class="informacao-produto">
+                    <h3>Nike Dunk Low Panda</h3>
+                    <p class="preco">Indisponível</p>
+                    <button class="btn-comprar" disabled>Avise-me</button>
+                </figcaption>
+            </article>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>Formas de pagamento: PIX, Cartão de Crédito em até 12x.</p>
+        <p>&copy; 2026 SneakerX. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

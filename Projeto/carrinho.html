@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho - SneakerX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo"><img src="SneakersX.jpg" alt="Logo" width="80"></div>
+        <nav class="menu">
+            <a href="index.html">Lançamentos</a>
+            <a href="index.html">Marcas</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="layout-carrinho">
+            <table class="tabela-carrinho">
+                <caption>Seu Carrinho</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Qtd</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="produto-item-celula">
+                                <img src="Air jordan 1 high.webp" alt="Tênis">
+                                <span>Air Jordan 1</span>
+                            </div>
+                        </td>
+                        <td>R$ 1.299,90</td>
+                        <td><input type="number" min="1" value="1" class="input-qtd"></td>
+                        <td>R$ 1.299,90</td>
+                        <td><button>🗑️</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="5">🎉 Você ganhou Frete Grátis!</td></tr>
+                </tfoot>
+            </table>
+
+            <aside class="resumo-pedido">
+                <h2>Resumo</h2>
+                <p>Total: R$ 1.299,90</p>
+                <a href="cadastro.html" class="btn-finalizar-checkout">Finalizar Compra</a>
+            </aside>
+        </div>
+    </main>
+
+</body>
+</html>
